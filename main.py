@@ -4,6 +4,9 @@ from spotipy.exceptions import SpotifyException
 from yandex_music import Client
 import logging
 
+import secret
+from secret import *
+
 logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s - %(levelname)s - %(message)s'
@@ -11,11 +14,11 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 
-CLIENT_ID = '3d72b7b2090f4c41b74157954784a4ad'
-CLIENT_SECRET = '909e321fe43e4f3e87af732859e5c8d0'
-REDIRECT_URI = 'http://localhost:8888/callback'
-SCOPE = 'user-library-modify playlist-modify-public playlist-modify-private'
-TOKEN = 'y0_AgAAAAAAZ-9eAAG8XgAAAADMw4n2HbuHYtVVRwWYvHHPwJ2T1GiUkzM'
+CLIENT_ID = secret.CLIENT_ID
+CLIENT_SECRET = secret.CLIENT_SECRET
+REDIRECT_URI = secret.REDIRECT_URI
+SCOPE = secret.SCOPE
+TOKEN = secret.TOKEN
 
 
 def chunks(lst, n):
