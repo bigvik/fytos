@@ -1,4 +1,4 @@
-## From Yandex To Spotify
+## <b>F</b>rom Yandex To Spotify
 
 Скрипт який переносить плейлист яндекс музики в обране і новий плейлист спотіфай. Частково запозичено звідси https://github.com/lemonpaul/yandex2spotify
 
